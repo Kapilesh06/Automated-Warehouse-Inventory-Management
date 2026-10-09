@@ -270,16 +270,3 @@ npm run dev
 
 ---
 
-## 12. Viva Defense & Key Takeaways
-
-1. **Why not hard-coded predictions?**  
-   All 5 models are trained directly on engineered time-series features from the dataset. Centralized inference in `ml/predict.py` guarantees reproducible, dynamic predictions.
-2. **How is data leakage avoided?**  
-   Lagged rolling windows (strictly referencing historical dates) and chronological train-test splits are enforced during feature engineering.
-3. **What makes the multi-agent system authentic?**  
-   Each agent owns a distinct responsibility with dedicated inputs and outputs:
-   - Inventory Agent updates physical balances.
-   - Demand Agent forecasts velocity.
-   - Stock Alert Agent evaluates risk.
-   - Reorder Agent calculates economic order batches and accounts for open POs.
-   - Decision Agent arbitrates the final operational policy.
