@@ -1,0 +1,9 @@
+id,name,code,type,address
+1,Main Central Warehouse,WH-MAIN,PRIMARY,"Bay 1-12, Central Logistics Park, Sector 18, Gurgaon"
+2,North Distribution Center,DC-NORTH,DISTRIBUTION,"GT Road, Kundli Logistic Hub, Sonipat"
+3,West Coast Fulfillment Center,FC-WEST,FULFILLMENT,"Bhiwandi Express Highway, Thane"
+4,South Regional Depot,RD-SOUTH,DEPOT,"Hosur Road Logistics Corridor, Bangalore"
+5,East Fast-Hub,HUB-EAST,CROSS_DOCK,"Dankuni Express Cargo Terminal, Hooghly"
+6,Secured Electronics Vault,SEC-VAULT,SECURE_STORAGE,"Cleanroom Unit 4, Central Logistics Park, Gurgaon"
+7,Bulk Overflow Yard,OY-BULK,OVERFLOW,"Open Shed 2B, Pataudi Road Warehouse Park, Gurgaon"
+8,Assembly & Prep Bay,BAY-PREP,STAGING,"Dock 7 Marshalling Area, Central Logistics Park, Gurgaon"

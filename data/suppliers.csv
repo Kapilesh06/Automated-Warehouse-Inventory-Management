@@ -1,0 +1,9 @@
+id,supplier_code,name,contact_person,email,phone,address,lead_time_days,minimum_order_amount,reliability_rating
+1,SUP-ABC,ABC Electronics,Vikram Malhotra,orders@abcelectronics.com,+91 98201 12345,"Electronic City Phase 1, Bangalore, Karnataka",7,50000.0,0.98
+2,SUP-XYZ,XYZ Supplies,Pooja Sharma,orders@xyzsupplies.in,+91 97110 54321,"Bhiwandi Logistics Hub, Thane, Maharashtra",3,15000.0,0.98
+3,SUP-TECH,Tech Supplier,Rajesh Nair,sales@techsupplier.co.in,+91 94470 98765,"Peenya Industrial Area, Bangalore, Karnataka",5,25000.0,0.95
+4,SUP-METRO,Metro Office & Stationery,Ananya Sen,corporate@metrooffice.com,+91 98300 23456,"Salt Lake Sector V, Kolkata, West Bengal",4,10000.0,0.94
+5,SUP-ZENITH,Zenith Mechanical Parts,Amit Patel,support@zenithparts.com,+91 98790 67890,"GIDC Naroda, Ahmedabad, Gujarat",10,40000.0,0.89
+6,SUP-PRIME,Prime Consumables India,Deepak Verma,sales@primeconsumables.in,+91 99100 45678,"Okhla Industrial Area Phase III, New Delhi",4,20000.0,0.95
+7,SUP-NEXUS,Nexus Retail Goods,Kavita Reddy,procurement@nexusretail.com,+91 98480 34567,"HITEC City Madhapur, Hyderabad, Telangana",6,35000.0,0.93
+8,SUP-VANGUARD,Vanguard Ergonomics & Furniture,Sunil Rao,contracts@vanguardfurniture.com,+91 98800 89012,"Bommasandra Industrial Zone, Bangalore, Karnataka",12,60000.0,0.91
