@@ -1,0 +1,123 @@
+{
+  "training_timestamp": "2026-09-24 19:57:43",
+  "total_samples": 9288,
+  "train_samples": 7398,
+  "test_samples": 1890,
+  "models": {
+    "demand_model": {
+      "type": "Random Forest Regressor",
+      "target": "target_30d_demand",
+      "features": [
+        "product_id",
+        "category_id",
+        "supplier_id",
+        "unit_cost",
+        "selling_price",
+        "rolling_7d_demand",
+        "rolling_14d_demand",
+        "rolling_30d_demand",
+        "velocity_3d",
+        "day_of_week",
+        "month",
+        "is_weekend",
+        "lead_time_days"
+      ],
+      "metrics": {
+        "MAE": 104.402,
+        "RMSE": 162.528,
+        "R2": 0.2166
+      }
+    },
+    "short_term_demand_model": {
+      "type": "Gradient Boosting Regressor",
+      "target": "target_7d_demand",
+      "features": [
+        "product_id",
+        "category_id",
+        "unit_cost",
+        "rolling_7d_demand",
+        "rolling_14d_demand",
+        "velocity_3d",
+        "day_of_week",
+        "month",
+        "is_weekend"
+      ],
+      "metrics": {
+        "MAE": 27.538,
+        "RMSE": 42.107,
+        "R2": 0.5051
+      }
+    },
+    "stockout_model": {
+      "type": "Random Forest Classifier",
+      "target": "target_stockout_risk (LOW, MEDIUM, HIGH)",
+      "features": [
+        "product_id",
+        "current_stock",
+        "safety_stock",
+        "reorder_point",
+        "stock_ratio",
+        "stock_to_safety_ratio",
+        "velocity_3d",
+        "rolling_7d_demand",
+        "lead_time_days"
+      ],
+      "classes": [
+        "HIGH",
+        "LOW",
+        "MEDIUM"
+      ],
+      "metrics": {
+        "Accuracy": 0.9825,
+        "Precision": 0.9825,
+        "Recall": 0.9825,
+        "F1": 0.9819
+      }
+    },
+    "reorder_model": {
+      "type": "Random Forest Regressor",
+      "target": "target_reorder_qty",
+      "features": [
+        "current_stock",
+        "rolling_30d_demand",
+        "rolling_7d_demand",
+        "reorder_point",
+        "safety_stock",
+        "lead_time_days",
+        "velocity_3d",
+        "open_po_qty",
+        "unit_cost"
+      ],
+      "metrics": {
+        "MAE": 2.569,
+        "RMSE": 17.947,
+        "R2": 0.2285
+      }
+    },
+    "inventory_status_model": {
+      "type": "Decision Tree Classifier",
+      "target": "target_inventory_status (OVERSTOCK, NORMAL, LOW, CRITICAL)",
+      "features": [
+        "current_stock",
+        "safety_stock",
+        "reorder_point",
+        "stock_ratio",
+        "stock_to_safety_ratio",
+        "velocity_3d",
+        "rolling_7d_demand"
+      ],
+      "classes": [
+        "CRITICAL",
+        "LOW",
+        "NORMAL",
+        "OVERSTOCK"
+      ],
+      "metrics": {
+        "Accuracy": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0
+      }
+    }
+  }
+}
